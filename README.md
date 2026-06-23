@@ -1,6 +1,6 @@
 # 3D Gaussian Splatting Repository
 
-最小化提交包，包含两场景训练结果、数据集元数据与复现脚本。
+包含两场景训练结果、数据集元数据与复现脚本。
 
 ## 目录结构
 
@@ -9,18 +9,8 @@
 - `dataset/garden/` — 花园 COLMAP SfM 数据（images_2 + sparse/0）
 - `dataset/truck/` — 卡车 COLMAP SfM 数据（images + sparse/0）
 - `src/` — 关键训练/渲染/评估源码
-- `report.md` — 实验报告与定量分析
 
-PLY 模型文件未包含，见下方下载。
-
-## 模型文件下载
-
-| 场景 | 迭代 | 文件大小 | 下载链接 |
-|------|------|----------|----------|
-| Garden | 7,000 | 857 MB | `garden_iter7000.ply` |
-| Garden | 30,000 | 1,011 MB | `garden_iter30000.ply` |
-| Truck | 7,000 | 103 MB | `truck_iter7000.ply` |
-| Truck | 30,000 | 111 MB | `truck_iter30000.ply` |
+PLY 模型文件未包含，见百度网盘链接。
 
 ## 训练命令
 
@@ -73,6 +63,4 @@ python src/metrics.py -m results/truck
 | Garden | 33.41 | 0.0087 | ~470,621 |
 | Truck | 28.41 | 0.0096 | ~2,000,000 |
 
-## 许可证
 
-代码部分遵循原始 3D Gaussian Splatting 项目 LICENSE。
