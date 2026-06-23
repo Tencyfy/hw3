@@ -1,0 +1,18 @@
+# Utility dependencies for the project-level scripts.
+# CUDA-heavy threestudio dependencies are installed inside external/threestudio
+# by scripts/setup_threestudio.* and are intentionally not listed here.
+
+numpy>=1.26,<2
+Pillow>=10,<13
+scipy>=1.11,<2
+scikit-image>=0.23,<0.27
+opencv-python-headless>=4.8
+huggingface_hub>=0.20,<1.0
+wandb>=0.16
+ninja>=1.11
+
+# Used by scripts/prepare_object_c_image.py when --remove-bg is enabled.
+# The pinned combination is stable on the local Windows/Python 3.11 setup used
+# for image cutouts in this project.
+rembg==2.0.50
+onnxruntime>=1.16,<1.18

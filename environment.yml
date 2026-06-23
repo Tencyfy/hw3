@@ -1,0 +1,17 @@
+name: dl-hw3-task1
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  - numpy
+  - pillow
+  - pip:
+      - ninja
+      - huggingface_hub
+      - rembg
